@@ -398,12 +398,37 @@
         </footer>
 
         <div class="backdrop is-hidden" data-modal>
-            <div class="model">
-                <button type="button" class="close-btn" data-modal-close>
-                    <svg>
-                        <use href="./images/sprite.svg#icon-close"></use>
-                    </svg>
-                </button>
+            <div class="support">
+                <div class="model">
+                    <button type="button" class="close-btn" data-modal-close>
+                        <svg>
+                            <use class="close" href="./images/sprite.svg#icon-close"></use>
+                        </svg>
+                    </button>
+                    <h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2>
+                    <form action="#"  class="form">
+                        <div class="form-container">
+                            <p class="form-name">Имя</p>
+                            <input type="text" class="form-input" name="Имя" id="имя">
+                        </div>
+                        <div class="form-container">
+                            <p class="form-name">Телефон</p>
+                            <input type="tel" class="form-input" name="Телефон" id="имя">
+                        </div>
+                        <div class="form-container">
+                            <p class="form-name">Почта</p>
+                            <input type="email" class="form-input" name="Почта" id="имя">
+                        </div>
+                        <div class="form-container">
+                            <p class="form-name">Комментарий</p>
+                            <input type="text" class="form-input-coment" name="Комментарий" id="имя">
+                        </div>
+                        <div class=""></div>
+                        <div class="btn-submit">
+                            <button type="submit" class="form-submit-btn">Отправить</button>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
     <script src="./js/model.js"></script>

@@ -65,7 +65,7 @@
             <!--Good-->
             <section class="articl">
                 <div class="container">
-                    <h2 hidden class="articl-title-hidden">Список преимущетв</h2>
+                    <h2 class="articl-title-hidden visually-hidden">Список преимущетв</h2>
                     <ul class="list articl-list">
                         <li class="articl-list-item antenna">
                             <h3 class="articl-title">Внимание к деталям</h3>
@@ -357,7 +357,7 @@
                             </ul>
                         </address>
                     </li>
-                    <li class="footer-item">
+                    <li class="footer-item-container">
                        <h3 class="social-title">присоединяйтесь</h3> 
                        <ul class="social-list-footer list">
                         <li class="social-footer-item">
@@ -393,8 +393,27 @@
                         </li>
                     </ul>
                     </li>
+                    <li class="footer-form-section">
+                        <h3 class="social-title">Подпишитесь на рассылку</h3> 
+                        <form action="#" class="footer-form">
+                            <input type="email" 
+                                name="email" 
+                                
+                                placeholder="E-mail"
+                                class="footer-form-input">
+                            <button type="submit" class="form-footer-btn">
+                                
+                                    Подписаться
+                                    <svg width="24px" height="24px" class="submit-icon">
+                                        <use href="./images/sprite.svg#icon-send"></use>
+                                    </svg>        
+                                
+                            </button>   
+                        </form>
+                    </li>
                 </ul>
             </div>
+
         </footer>
 
         <div class="backdrop is-hidden" data-modal>
@@ -407,23 +426,45 @@
                     </button>
                     <h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2>
                     <form action="#"  class="form">
-                        <div class="form-container">
-                            <p class="form-name">Имя</p>
-                            <input type="text" class="form-input" name="Имя" id="имя">
-                        </div>
-                        <div class="form-container">
-                            <p class="form-name">Телефон</p>
-                            <input type="tel" class="form-input" name="Телефон" id="имя">
-                        </div>
-                        <div class="form-container">
-                            <p class="form-name">Почта</p>
-                            <input type="email" class="form-input" name="Почта" id="имя">
-                        </div>
-                        <div class="form-container">
-                            <p class="form-name">Комментарий</p>
-                            <input type="text" class="form-input-coment" name="Комментарий" id="имя">
-                        </div>
-                        <div class=""></div>
+                        
+                        <label class="form-container">
+                            Имя
+                            <input type="text" name="name" class="form-input">
+                            <svg width="18px" height="18px" class="modal-form-icon">
+                                <use href="./images/sprite.svg#icon-model-person"></use>
+                            </svg>
+                        </label>
+                        
+                        <label for="tel" class="form-container">
+                            Телефон
+                
+                            <input type="tel" class="form-input" name="tel">
+                            <svg width="18px" height="18px" class="modal-form-icon">
+                                <use href="./images/sprite.svg#icon-model-phone"></use>
+                            </svg>
+                        </label>
+                        
+                        <label for="email" class="form-container">
+                            Почта
+                           
+                            <input type="email" class="form-input" name="email">
+                            <svg width="18px" height="18px" class="modal-form-icon">
+                                <use href="./images/sprite.svg#icon-model-email"></use>
+                            </svg>
+                        </label>
+                        
+                        <label for="coment" class="form-container-coment">
+                            Комментарий
+                           
+                            <textarea name="coment" class="form-coment" placeholder="Введите текст"></textarea>
+                        </label>   
+                        
+                        <input type="checkbox" name="assept" value="assept-police"
+                         class="form-checkbox visually-hidden " id="assept">
+                        <label for="assept" class="form-checkbox-conteiner">
+                            Соглашаюсь с рассылкой и принимаю <a href="" class="checkbox-item">Условия договора</a> 
+                        </label>
+                        
                         <div class="btn-submit">
                             <button type="submit" class="form-submit-btn">Отправить</button>
                         </div>

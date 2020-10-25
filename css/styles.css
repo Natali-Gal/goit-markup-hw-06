@@ -385,7 +385,7 @@ img {
 .form-checkbox:checked + .form-checkbox-conteiner::before {
     background-color: #2196F3;
     background-image: url(../images/modal/check.svg);
-    outline: none;
+    border: none;
    
     
 }

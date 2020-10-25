@@ -370,8 +370,9 @@ img {
     content: "";
     width: 16px;
     height: 15px;
-    outline: 0.75px solid #212121;
     border-radius: 2px;
+    border: 0.75px solid #212121;
+   
 }
 
 .form-checkbox:checked + .form-checkbox-conteiner::before {
@@ -980,12 +981,14 @@ img {
     border-color: rgba(255, 255, 255, 0.3);
     border-style: solid;
     padding-left: 16px;
+    border-radius: 4px;
+    color: #FFFFFF ;
 }
 
 .footer-form-input:hover,
 .footer-form-input:focus {
     border-color: #2196F3;
-    color: #2196F3;
+    
     outline: none;
 }
 

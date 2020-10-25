@@ -383,6 +383,11 @@ img {
     outline: none;
 }
 
+.checkbox-item {
+    color: #2196F3;
+}
+
+
 .form-submit-btn {
     
     font-family: var(--main-font);

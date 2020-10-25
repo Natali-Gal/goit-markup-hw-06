@@ -356,15 +356,18 @@ img {
 }
 
 .form-checkbox-conteiner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-family: var(--main-font);
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.714;
-    align-items: center;
-    text-align: center;
     letter-spacing: 0.03em;
     color: rgba(117, 117, 117, 1);
+    
+
 }
 
 .form-checkbox-conteiner::before {
@@ -374,6 +377,8 @@ img {
     height: 15px;
     border-radius: 2px;
     border: 0.75px solid #212121;
+    margin-right: 8px;
+    
    
 }
 
@@ -381,10 +386,15 @@ img {
     background-color: #2196F3;
     background-image: url(../images/modal/check.svg);
     outline: none;
+   
+    
 }
+
 
 .checkbox-item {
     color: #2196F3;
+    margin-left: 5px;
+    
 }
 
 
